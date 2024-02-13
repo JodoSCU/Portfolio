@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d5439d9ac.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<!----------------Header Section------------------->
+
+
+<body>
+     
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <h1 class="logo"><span>J</span>ustin</h1>
+                <!----<img src="images/logo.png" alt="Logo" width="243" height="85">------>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio ">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+           
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Justin</span>. I Study<br>CSE at Santa Clara University</h1>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+<!----------------About Me Section------------------->
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Headshot.png" alt="Justin's Headshot" width="450" height="368">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>&#128640; Hi there! My name is Justin Odo.<br><br>
+
+                    As a highly driven second-year studying Computer Science and Engineering at Santa Clara University, I am deeply passionate about the rapidly evolving world of Artificial Intelligence and Cloud Computing.<br><br>
+                    
+                    My education has provided me with a solid foundation of Computer Science that equips me with the knowledge necessary to begin my journey to achieving this goal. My completed coursework includes: Advanced Programming, Data Structures, Intro to Logic Design and Intro to Embedded Systems. Additionally, I am currently taking Advanced Object Oriented Programming and Data structures.<br><br>
+                    
+                    I aspire to break into AI Programming and Cloud Computing as a software engineer and use my skills to develop innovative solutions to real world problems. I am driven by learning and curiosity, and I possess a growth mindset that allows me to overcome obstacles. I am eager to join a company that will allow me to learn from experienced mentors and contribute to impactful projects and solutions.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>C/C++, Python, HTML, CSS, Java</li>
+                        <li><span>Software</span><br>Git, Linux, Cypress</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2023 - Sep 2023</span><br>Software QA/Testing Engineering Internship at Neuroleap corp.</li>
+                        <li><span>Sep 2021 - May 2022</span><br>Math and Science Mentoring Program Tutor</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>June 2026</span><br>B.S. Computer Science and Engineering at Santa Clara University</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+</div>
+
+<!----------------Projects Section------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3><b>Project Safe Water</b></h3>
+                    <p>Project Safe Water effectively tracks the location of safe drinking sources in a small vicinity of the users location and provides useful information about the quality of water.</p>
+                    <a href="https://devpost.com/software/project-safe-water"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3><b>Personal Portfolio Website</b></h3>
+                    <p>Created this personal portfolio website to showcase professional projects, skills, and achievements.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3><b>Project Safe Water</b></h3>
+                    <p>Project Safe Water effectively tracks the location of safe drinking sources in a small vicinity of the users location and provides useful information about the quality of water.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------Contact Me Section------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me!</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>justinodo213@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>510-738-7444</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/justin-odo/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JodoSCU"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/JustinOdo_12_14_2023.pdf" download class="btn btn2">Download Resume/CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+             </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function openmenu(){
+        document.getElementById('sidemenu').style.right = '0';
+    }
+
+    function closemenu(){
+        document.getElementById('sidemenu').style.right = '-200px';
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5RKd_CLqSt1nbXaWnpUUeLA9moCkfpuENn-JxZBxI3nSgqSIopk9dYlE-0QuuOjya/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent! I will get back to you soon."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script type="text/javascript" src="/particles.js-master/particles.js"></script>
+<script type="text/javascript" src="/particles.js-master/demo/js/app.js"></script>
+
+</body>
+</html>
