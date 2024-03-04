@@ -14,7 +14,7 @@ html{
 
 
 body{
-    background-color: #000000;
+    background-color: hsl(0, 0%, 11%);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -41,13 +41,27 @@ body{
 }
 
 .logo {
-    font-size: 66px; /* Adjust the font size as needed */
+    font-size: 40px;
+}
+
+h1.logo a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo::first-letter {
     color: #922cfe;
 }
 
+#navbar {
+    padding: 10px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; 
+    padding: 10px;
+}
 
 nav{
 
