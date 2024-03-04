@@ -17,20 +17,22 @@
 <body>
      
     <div id="header">
+        <nav id="navbar">
+            <h1 class="logo"><a href="#header"><span>J</span>ustin</a></h1>
+            <!----<img src="images/logo.png" alt="Logo" width="243" height="85">------>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio ">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
         <div class="container">
             
-            <nav id="navbar">
-                <h1 class="logo"><span>J</span>ustin</h1>
-                <!----<img src="images/logo.png" alt="Logo" width="243" height="85">------>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio ">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+
            
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -42,58 +44,11 @@
 
 
 
-<!----------------About Me Section------------------->
 
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/Headshot.png" alt="Justin's Headshot" width="450" height="368">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>&#128640; Hi there! My name is Justin Odo.<br><br>
-
-                    As a highly driven second-year studying Computer Science and Engineering at Santa Clara University, I am deeply passionate about the rapidly evolving world of Artificial Intelligence and Cloud Computing.<br><br>
-                    
-                    My education has provided me with a solid foundation of Computer Science that equips me with the knowledge necessary to begin my journey to achieving this goal. My completed coursework includes: Advanced Programming, Data Structures, Intro to Logic Design and Intro to Embedded Systems. Additionally, I am currently taking Advanced Object Oriented Programming and Data structures.<br><br>
-                    
-                    I aspire to break into AI Programming and Cloud Computing as a software engineer and use my skills to develop innovative solutions to real world problems. I am driven by learning and curiosity, and I possess a growth mindset that allows me to overcome obstacles. I am eager to join a company that will allow me to learn from experienced mentors and contribute to impactful projects and solutions.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming</span><br>C/C++, Python, HTML, CSS, Java</li>
-                        <li><span>Software</span><br>Git, Linux, Cypress</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Apr 2023 - Sep 2023</span><br>Software QA/Testing Engineering Internship at Neuroleap corp.</li>
-                        <li><span>Sep 2021 - May 2022</span><br>Math and Science Mentoring Program Tutor</li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>June 2026</span><br>B.S. Computer Science and Engineering at Santa Clara University</li>
-                        
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-</div>
 <!----------------What I do Section------------------->
 <div id="services">
     <div class="container">
-        <div class="sub-title">What I do</div>
+        <div class="sub-title">Skills</div>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-check"></i>
@@ -148,6 +103,56 @@
         <a href="#" class="btn">See More</a>
     </div>
 </div>
+
+
+<!----------------About Me Section------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Headshot.png" alt="Justin's Headshot" width="450" height="368">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>&#128640; Hi there! My name is Justin Odo.<br><br>
+
+                    As a highly driven second-year studying Computer Science and Engineering at Santa Clara University, I am deeply passionate about the rapidly evolving world of Artificial Intelligence and Cloud Computing.<br><br>
+                    
+                    My education has provided me with a solid foundation of Computer Science that equips me with the knowledge necessary to begin my journey to achieving this goal. My completed coursework includes: Advanced Programming, Data Structures, Intro to Logic Design and Intro to Embedded Systems. Additionally, I am currently taking Advanced Object Oriented Programming and Data structures.<br><br>
+                    
+                    I aspire to break into AI Programming and Cloud Computing as a software engineer and use my skills to develop innovative solutions to real world problems. I am driven by learning and curiosity, and I possess a growth mindset that allows me to overcome obstacles. I am eager to join a company that will allow me to learn from experienced mentors and contribute to impactful projects and solutions.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>C/C++, Python, HTML, CSS, Java</li>
+                        <li><span>Software</span><br>Git, Linux, Cypress</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2023 - Sep 2023</span><br>Software QA/Testing Engineering Internship at Neuroleap corp.</li>
+                        <li><span>Sep 2021 - May 2022</span><br>Math and Science Mentoring Program Tutor</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>June 2026</span><br>B.S. Computer Science and Engineering at Santa Clara University</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+</div>
+
 <!----------------Contact Me Section------------------->
 <div id="contact">
     <div class="container">
@@ -218,6 +223,22 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+<<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            var navbar = document.getElementById("navbar");
+            if (window.scrollY > 250) {
+                navbar.style.backgroundColor = "hsl(0, 0%, 11%)"; 
+                navbar.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.3)"; 
+            } else {
+                navbar.style.backgroundColor = "rgba(0, 0, 0, 0)"; 
+                navbar.style.boxShadow = "none"; 
+            }
+        });
+    });
+
 </script>
 
 
